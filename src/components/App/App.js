@@ -30,6 +30,8 @@ class App extends React.Component {
   render() {
     console.log("App render");
     console.log("App render");
+    console.log("App render");
+    console.log();
     const { condition } = this.state
     return (
       <div className="App">
