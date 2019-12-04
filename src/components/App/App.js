@@ -6,6 +6,7 @@ import CustomTextInput from "./../React.creactRef/CustomTextInput";
 import AwesomeImage from "./../Higher-oder-Component/Awesomeimage";
 import HoverImage from "./../Higher-oder-Component/HoverImage";
 import List from "./../Render-Props/List";
+import Couter from "./../Render-Props/Couter"
 
 const WrappedAwesomeImage  = HoverImage(AwesomeImage, 0.9);
 
@@ -47,7 +48,9 @@ class App extends Component {
 
         <h1> Render Props </h1>
         <List data={data} render={item => <div>{item}</div>} />
-        <List data={data} render={item => <div> - {item}</div>} />
+        <Couter>
+          { ({count}) => <h1>{count}</h1> }
+        </Couter>
       </div>
     );
   }
